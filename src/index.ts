@@ -23,12 +23,13 @@ console.log('rpc_endpoint:', rpc_endpoint);
     new Uint8Array(bs58.decode(private_key))
   );
 
-  const RPC = rpc_endpoint || "https://api.devnet.solana.com";
+  const RPC = rpc_endpoint || "https://api.mainnet-beta.solana.com/";
 
   const connection = new Connection(RPC, "finalized");
   
+  //https://app.meteora.ag/dlmm/5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6
   const poolAddress = new PublicKey(
-    "3W2HKgUa96Z69zzG3LK1g8KdcRAWzAttiLiHfYnKuPw5"
+    "5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6"
   );
   
 
